@@ -50,7 +50,7 @@ const ItemsProvider = ({ children }) => {
         const newItem = {
           id: Math.random(),
           itemName: userInput,
-          img: data.results[0].urls.thumb,
+          img: data.results[0]?.urls.thumb,
         };
 
         dispatch({ type: "add_item", payload: newItem });
