@@ -20,7 +20,8 @@ const CardList = () => {
             src={item.img}
             key={item.id}
             alt={item.img ? item.itemName : "Image unavailable"}
-            onClick={() => handleRemoveItem(item)}
+            onRemove={() => handleRemoveItem(item)}
+            item={item}
           />
         );
       })}
